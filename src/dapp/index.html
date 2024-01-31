@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <h2>Contract Section</h2>
+        <div class="top-20">
+            <label class="form">Data contract status: </label> <input type="text" id="contract-operational-status" readonly>
+            <btn class="btn btn-primary" id="contract-register-app-contract">Authorize App Contract</btn>&nbsp
+        </div>
+        <div class="top-20">   
+            <label class="form">Registration fee (ETH)</label><input type="text" id="contract-registration-fee" maxlength="6" size="4" value="10"/>
+            <btn class="btn btn-primary" id="contract-register-oracles">Register starting oracles</btn> 
+        </div>
+        
+        <div class="top-20"><br><br> </div><h2>Airlines Section</h2>
+
+        <div class="top-20"><h4>Register Airline</h4></div>
+        <div class="top-20">
+            <label class="form">Airline</label><select id="airlines-airline-dropdown"></select>&nbsp;&nbsp;
+            <btn class="btn btn-primary" id="airlines-register-airlines">Register starting airlines</btn>
+        </div>
+        <div class="top-20"><h4>Fund Airline</h4></div>
+        <div class="top-20">
+                <label class="form">Amount (ETH)</label><input type="text" id="airlines-fund-amount" maxlength="2" size="4" value="10"/>&nbsp;&nbsp;
+                <btn class="btn btn-primary" id="fund">Fund Airline</btn>
+        </div>
+        </div>
+
+
+        <div class="top-20"><br><br>
+            <h2>Flights Section</h2>
+            <h4>Flight Status</h4>
+        </div>
+        <div class="top-20">
+            <label class="form">Flight</label> 
+            <select id="flights-flights-dropdown"></select>&nbsp;&nbsp;
+            <btn class="btn btn-primary" id="flights-register-flight">Register flight</btn>
+            <btn class="btn btn-primary" id="flights-request-oracles">Check flight status & insurance</btn>
+        </div>
+        
+
+        <div class="top-20"><br><br>
+            <h2>Passenger Section</h2>
+            <h4>Insure flight</h4>
+
+        </div>
+        <div class="top-20"></div>
+            <label class="form">Flight</label>
+            <select id="passengers-flights-dropdown"></select>&nbsp;&nbsp;
+            <label class="form">Amount (ETH)</label><input type="text" id="passengers-insurance-amount" maxlength="4" size="4" value="1"/>&nbsp;&nbsp;
+            <btn class="btn btn-primary" id="passengers-insurance-button">Insure Flight</btn>
+            </div>
+        </div>
+        <div class="top-20">
+            <h4>Withdraw Insurance payout</h4>
+            <btn class="btn btn-primary" id="passengers-withdraw-payout">Withdraw Insurance Payout</btn>
+        </div>
+        <div class="top-20">
+            <h4>Get Withrawable Amount</h4>
+            <label class="form">Amount (ETH)</label><input type="text" id="passengers-value-payout" maxlength="4" size="4" value="" readonly/>&nbsp;&nbsp;
+            <btn class="btn btn-primary" id="passengers-get-payout">Update Withdrawable Amount</btn>
+        </div>
+    </main>
+
+</body>
+
+</html>
